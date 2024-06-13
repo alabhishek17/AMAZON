@@ -1,22 +1,22 @@
 
-import { useGetProductIteamQuery,useGetProductsByGamesQuery} from "../reducer/services/productlist"; 
+import { useGetProductIteamQuery,useGetProductsByAmazonFreshQuery } from "../reducer/services/productlist"; 
 import { useNavigate } from "react-router-dom";
-function ALEXA(){
+function AmazonFresh(){
     const navigate=useNavigate();
-    const { data: gamesData, error: gamesError, isLoading: isLoadingames } = useGetProductsByGamesQuery(
-        "search?query=Women&page=1&country=US&sort_by=RELEVANCE&product_condition=ALL"
+    const { data: AmazonFreshData, error: AmazonFreshError, isLoading: isLoadingAmazonFresh } = useGetProductsByAmazonFreshQuery(
+        "search?query=Premium Beauty&page=1&country=US&sort_by=RELEVANCE&product_condition=ALL"
       );
        
-    // console.log(categoryData,categoryError,isLoadingCategory);
-    if(isLoadingames){
+    // console.log(musicData,musicError,isLoadingmusic);
+    if(isLoadingAmazonFresh){
         return <h2>Loading....</h2>
     }
-    if(gamesError){
+    if(AmazonFreshError){
         return <h2>error...</h2>
     }
 return(
     <div className="flex flex-wrap justify-center">
-            {gamesData.data.products.map((item,asin) => (
+            {AmazonFreshData.data.products.map((item,asin) => (
                 <div key={asin} className="max-w-sm rounded overflow-hidden shadow-lg m-4" onClick={()=>navigate(`/details/${item.asin}`)}>
                     <img className="w-full" src={item.product_photo} alt={item.product_title} />
                     <div className="px-6 py-4">
@@ -33,4 +33,4 @@ return(
         </div>
 )
 }
-export default ALEXA;
+export default AmazonFresh;

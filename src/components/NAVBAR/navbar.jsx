@@ -105,17 +105,17 @@ function NAVBAR() {
       </Transition.Root>
 
       {/* Desktop */}
-      <header className="relative bg-white">
-        <p className="flex h-10 items-center justify-center bg-pink-600 px-4 text-sm font-medium text-white sm:px-6 lg:px-8" style={{ backgroundColor: mode === 'dark' ? 'rgb(62 64 66)' : '', color: mode === 'dark' ? 'white' : '' }}>
+      <header className="relative bg-gray-800">
+        <p className="flex h-10 items-center justify-center bg-gray-600 px-4 text-sm font-medium text-white sm:px-6 lg:px-8" style={{ backgroundColor: mode === 'dark' ? 'rgb(62 64 66)' : '', color: mode === 'dark' ? 'white' : '' }}>
           Get free delivery on orders over ₹300
         </p>
 
-        <nav aria-label="Top" className="bg-gray-100 px-4 sm:px-6 lg:px-8 shadow-xl" style={{ backgroundColor: mode === 'dark' ? '#282c34' : '', color: mode === 'dark' ? 'white' : '' }}>
+        <nav aria-label="Top" className="bg-gray-800 px-4 sm:px-6 lg:px-8 shadow-xl" style={{ backgroundColor: mode === 'dark' ? '#282c34' : '', color: mode === 'dark' ? 'white' : '' }}>
           <div>
             <div className="flex h-16 items-center">
               <button
                 type="button"
-                className="rounded-md bg-white p-2 text-gray-400 lg:hidden"
+                className="rounded-md bg-white p-2 text-gray-100 lg:hidden"
                 onClick={() => setOpen(true)}
                 style={{ backgroundColor: mode === 'dark' ? 'rgb(80 82 87)' : '', color: mode === 'dark' ? 'white' : '' }}
               >
@@ -129,59 +129,65 @@ function NAVBAR() {
               <div className="ml-4 flex lg:ml-0">
                 <Link to='/' className='flex'>
                   <div className="flex">
-                    <h1 className="text-2xl font-bold text-black px-2 py-1 rounded" style={{ color: mode === 'dark' ? 'white' : '' }}>E-AMAZON</h1>
+                    <h1 className="text-2xl font-bold text-white px-2 py-1 rounded" style={{ color: mode === 'dark' ? 'white' : '' }}>E-AMAZON</h1>
                   </div>
                 </Link>
               </div>
 
               <div className="ml-auto flex items-center">
                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
-                  <Link to='/allProducts.jsx' className="text-sm font-medium text-gray-700" style={{ color: mode === 'dark' ? 'white' : '' }}>
+                  <Link to='/allProducts.jsx' className="text-sm font-medium text-gray-100" style={{ color: mode === 'dark' ? 'white' : '' }}>
                     All Products
                   </Link>
-                  <Link to='/order.jsx' className="text-sm font-medium text-gray-700" style={{ color: mode === 'dark' ? 'white' : '' }}>
-                    Order
+                  <Link to='/amazonfresh.jsx' className="text-sm font-medium text-gray-100" style={{ color: mode === 'dark' ? 'white' : '' }}>
+                  Premium Beauty
                   </Link>
-                  <Link to='/productphone.jsx' className="text-sm font-medium text-gray-700" style={{ color: mode === 'dark' ? 'white' : '' }}>
+                  <Link to='/productphone.jsx' className="text-sm font-medium text-gray-100" style={{ color: mode === 'dark' ? 'white' : '' }}>
                     Mobile
                   </Link>
-                  <Link to='/computer.jsx' className="text-sm font-medium text-gray-700" style={{ color: mode === 'dark' ? 'white' : '' }}>
+                  <Link to='/computer.jsx' className="text-sm font-medium text-gray-100" style={{ color: mode === 'dark' ? 'white' : '' }}>
                     Computer
                   </Link>
-                  <Link to='/alexa.jsx' className="text-sm font-medium text-gray-700" style={{ color: mode === 'dark' ? 'white' : '' }}>
-                    Alexa
+                  <Link to='/alexa.jsx' className="text-sm font-medium text-gray-100" style={{ color: mode === 'dark' ? 'white' : '' }}>
+                  Women Fashion
                   </Link>
-                  <Link to='/fashion.jsx' className="text-sm font-medium text-gray-700" style={{ color: mode === 'dark' ? 'white' : '' }}>
+                  <Link to='/fashion.jsx' className="text-sm font-medium text-gray-100" style={{ color: mode === 'dark' ? 'white' : '' }}>
                     Fashion
                   </Link>
-                  <Link to='/devices.jsx' className="text-sm font-medium text-gray-700" style={{ color: mode === 'dark' ? 'white' : '' }}>
+                  <Link to='/devices.jsx' className="text-sm font-medium text-gray-100" style={{ color: mode === 'dark' ? 'white' : '' }}>
                     Amazon Devices
                   </Link>
-                  <Link to='/primevideo.jsx' className="text-sm font-medium text-gray-700" style={{ color: mode === 'dark' ? 'white' : '' }}>
+                  <Link to='/primevideo.jsx' className="text-sm font-medium text-gray-100" style={{ color: mode === 'dark' ? 'white' : '' }}>
                     Prime Video
                   </Link>
-                  <Link to='/sports.jsx' className="text-sm font-medium text-gray-700" style={{ color: mode === 'dark' ? 'white' : '' }}>
+                  <Link to='/sports.jsx' className="text-sm font-medium text-gray-100" style={{ color: mode === 'dark' ? 'white' : '' }}>
                     Sports
                   </Link>
-                  <Link to='/musical.jsx' className="text-sm font-medium text-gray-700" style={{ color: mode === 'dark' ? 'white' : '' }}>
+                  <Link to='/musical.jsx' className="text-sm font-medium text-gray-100" style={{ color: mode === 'dark' ? 'white' : '' }}>
                   Musical Instruments
+                  </Link>
+                  <Link to='/signin.jsx' className="text-sm font-medium text-gray-100" style={{ color: mode === 'dark' ? 'white' : '' }}>
+                  SignIn
+                  </Link>
+                  <Link to='/signout.jsx' className="text-sm font-medium text-gray-100" style={{ color: mode === 'dark' ? 'white' : '' }}>
+                  SignOut
                   </Link>
                 </div>
 
                 {/* Dark Mode Toggle */}
                 <div onClick={toggleMode} className="cursor-pointer mx-5 p-2 rounded-full border-2 border-gray-600 shadow-md">
-                  {mode === 'dark' ? <FiSun className="text-yellow-300" /> : <BsFillCloudSunFill className="text-gray-600" />}
+                  {mode === 'dark' ? <FiSun className="text-yellow-300" /> : <BsFillCloudSunFill className="text-gray-100" />}
                 </div>
 
                 {/* Cart */}
                 <div className="ml-4 flow-root lg:ml-6">
                   <Link to='/cart.jsx'>
                     <div className="group -m-2 flex items-center p-2">
-                      <svg className="flex-shrink-0 h-6 w-6 text-gray-600 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                      <svg className="flex-shrink-0 h-6 w-6 text-gray-100 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M3 3h18l-1.59 9.65a4.5 4.5 0 01-4.36 3.85H8.95a4.5 4.5 0 01-4.36-3.85L3 3z" />
                         <path strokeLinecap="round" strokeLinejoin="round" d="M8.5 16.5h7m-3.5 3v3" />
                       </svg>
-                      <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800" style={{ color: mode === 'dark' ? 'white' : '' }}>{cart.length}</span>
+                      <span className="ml-2 text-sm font-medium text-gray-100 group-hover:text-gray-800" style={{ color: mode === 'dark' ? 'white' : '' }}>{cart.length}</span>
                       <span className="sr-only">items in cart, view cart</span>
                     </div>
                   </Link>

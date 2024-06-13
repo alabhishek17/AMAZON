@@ -50,12 +50,17 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
             query:(name)=>`${name}`
               
         }),
+        getProductsByAmazonFresh:builder.query({
+            query:(name)=>`${name}`
+              
+        }),
     }),
 });
 
 console.log(productList);
 export const {useGetProductIteamQuery,useGetProductsByCategoryQuery,useGetProductsByPhoneQuery,useGetProductsByFashionQuery,useGetProductsByComputerQuery,
-              useGetProductsByMusicalInstrumentQuery,useGetProductsByPrimeVideoQuery,useGetProductsByGamesQuery,useGetProductsBySportsQuery,useGetProductsByAmazonDevicesQuery
+              useGetProductsByMusicalInstrumentQuery,useGetProductsByPrimeVideoQuery,useGetProductsByGamesQuery,useGetProductsBySportsQuery,useGetProductsByAmazonDevicesQuery,
+              useGetProductsByAmazonFreshQuery
 } = productList;
 
 

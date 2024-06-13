@@ -8,7 +8,7 @@ import FOOTER from './components/FOOTER/footer'
 import HOME from './pages/home'
 
 import CART from './pages/cart'
-import ORDER from './pages/order.jsx'
+import ORDER from './pages/amazonfresh.jsx'
 import ADMIN from './pages/admin.jsx'
 import ALLPRODUCT from './pages/allProducts.jsx'
 import DASHBORD from './pages/dashbord.jsx'
@@ -33,6 +33,9 @@ import 'react-toastify/dist/ReactToastify.css';
 import ALEXA from './pages/alexa.jsx'
 import SIGNIN from './pages/signin.jsx'
 import SIGNOUT from './pages/signout.jsx'
+import SearchResults from './components/FILTER/search.jsx'
+import SearchProduct from './components/FILTER/searchproduct.jsx'
+import AmazonFresh from './pages/amazonfresh.jsx'
 const Mainjsx=()=>{
   return(
     <>
@@ -56,6 +59,9 @@ const Mainjsx=()=>{
       element:<Mainjsx/>,
       children:[
    {
+    path:"/",
+      element:<HOME/>,
+   },{
     path:"/home.jsx",
       element:<HOME/>,
    },
@@ -109,8 +115,18 @@ const Mainjsx=()=>{
       path:"/productcatory.jsx",
       element:<CATEGORY/>
     },{
+      path:"/amazonfresh.jsx",
+      element:<AmazonFresh/>
+    }
+    ,{
       path:"/details/:id",
       element:<DRTAIL/>
+    },{
+      path:"/search.jsx",
+      element:<SearchResults/>
+    },{
+      path:"/searchproduct.jsx",
+      element:<SearchProduct/>
     }
       ]
   }

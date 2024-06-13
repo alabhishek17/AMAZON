@@ -5,6 +5,7 @@ import ALLCATORYLIST from "./allcatorylist";
 import CATEGORY from "./productcatory";
 import PHONE from "./productphone";
 import { addToCart, deleteFromCart } from "../reducer/slices/cartSlice";
+import SearchProduct from "../components/FILTER/searchproduct";
 function HOME(){
     const dispatch = useDispatch();
     const cartIteam = useSelector((state)=>state.cart)
@@ -25,6 +26,7 @@ function HOME(){
             </div> */}
             <HERO/>
             <FILTER/>
+            {/* <SearchProduct/> */}
             {/* <CATEGORY/> */}
             {/* <PHONE/> */}
             <ALLCATORYLIST/>
