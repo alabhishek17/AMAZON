@@ -13,7 +13,7 @@ function DRTAIL() {
     const options = {
         method: 'GET',
         headers: {
-            'x-rapidapi-key': '4d41d0d1f6msh84e0926cf6839a3p1cb87fjsn6fdc3740a0c4',
+            'x-rapidapi-key': 'be8121cb02mshc41e2b8ffe7322dp193598jsn52c63d92b682',
             'x-rapidapi-host': 'real-time-amazon-data.p.rapidapi.com'
         }
     };

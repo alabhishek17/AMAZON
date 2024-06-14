@@ -24,7 +24,7 @@ This is an e-commerce web application built using React.js and Tailwind CSS. The
 - **React.js:** JavaScript library for building user interfaces.
 - **Tailwind CSS:** Utility-first CSS framework for styling.
 - **React Router:** Library for routing in React applications.
-
+- **Redux Toolkit:** Efficient state management for React applications.
 
 ## Features
 
@@ -62,28 +62,30 @@ cd yourrepository
 - **View Cart:** Navigate to the cart page to see the products added to your cart and proceed to checkout.
 - **User Authentication:** Use the sign-in and sign-out functionalities to manage user authentication.
 ## Screenshots
-![landing Screenshot](D:\javascript\mct-js\screenshot\landing_page)
+![landing Screenshot](D:\ReactUs\AMAZON\ECOMMARCE\src\assests\landin1.png)
 
 ## Screenshots
-![Landing page2 Screenshot](D:\javascript2\mct-js\screenshot\landing_page2)
+![Landing page2 Screenshot](D:\ReactUs\AMAZON\ECOMMARCE\src\assests\landin2.png)
+
+
 
 ## Screenshots
-![Landing page2 Screenshot](D:\javascript2\mct-js\screenshot\landing_page3)
+![Sign in Screenshot](D:\ReactUs\AMAZON\ECOMMARCE\src\assests\signup.png)
 
 ## Screenshots
-![Sign up Screenshot](D:\javascript2\mct-js\screenshot\sign_up)
+![Sign out Screenshot](D:\ReactUs\AMAZON\ECOMMARCE\src\assests\signout.png)
 
 ## Screenshots
-![Sign in Screenshot](D:\javascript2\mct-js\screenshot\sign_in)
+![All_Products  Screenshot](D:\ReactUs\AMAZON\ECOMMARCE\src\assests\allproduct.png)
 
 ## Screenshots
-![User_Home Screenshot](D:\javascript2\mct-js\screenshot\user_home)
+![Details pagr Screenshot](D:\ReactUs\AMAZON\ECOMMARCE\src\assests\details.png)
 
 ## Screenshots
-![Home_btn Screenshot](D:\javascript2\mct-js\screenshot\home_btn)
+![AddtoCart Screenshot](D:\ReactUs\AMAZON\ECOMMARCE\src\assests\addtocar.png)
 
 ### Laptop View
-![Laptop View](https://github.com/alabhishek17/jsmct)
+![Laptop View](amazon-six-ivory.vercel.app)
 
 
 
@@ -120,7 +122,7 @@ This project demonstrates practical application of:
 
 ## Gratitude
 We sincerely thank you for exploring our Resume Application. We hope it serves you well in crafting the perfect resume and advancing your career journey.
-## Screenshots
+
 
 
 
