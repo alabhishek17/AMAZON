@@ -28,7 +28,7 @@ function FILTER() {
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
                         />
-                        <button onClick={handleSearch} className="ml-2 px-4 py-2 bg-gray-800 text-white rounded hover:bg-blue-700">
+                        <button onClick={handleSearch} className="ml-4 px-4 py-2 bg-gray-800 text-white rounded hover:bg-blue-700">
                             Search
                         </button>
                     </div>

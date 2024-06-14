@@ -3,7 +3,7 @@ import './loader.css'; // Import the CSS file where the loader styles are define
 
 const Loader = () => {
   return (
-    <div class="cube-loader  content-center mt-40 mb-80 ml-96">
+    <div class="cube-loader  content-center mt-96 items-center mb-80 ml-96">
       <div class="cube-top"></div>
       <div class="cube-wrapper">
         <span style={{ '--i': 0 }} className="cube-span"></span>
